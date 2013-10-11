@@ -195,12 +195,12 @@
                     <navigationItem key="navigationItem" id="5mg-Ql-0C9">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="tVa-mK-B7k">
                             <connections>
-                                <segue destination="aiL-3E-0Wq" kind="unwind" unwindAction="cancel:" id="VwC-GQ-HTL"/>
+                                <segue destination="aiL-3E-0Wq" kind="unwind" identifier="CancelInput" unwindAction="cancel:" id="VwC-GQ-HTL"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="nxO-Sr-9sJ">
                             <connections>
-                                <segue destination="aiL-3E-0Wq" kind="unwind" unwindAction="done:" id="mDJ-iV-Cbl"/>
+                                <segue destination="aiL-3E-0Wq" kind="unwind" identifier="ReturnInput" unwindAction="done:" id="mDJ-iV-Cbl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

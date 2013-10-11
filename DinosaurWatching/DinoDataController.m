@@ -45,7 +45,7 @@
 
 //override setting the dino list to make sure that a mutable copy is being set..
 -(void)setDinoList:(NSMutableArray *)dinoList {
-    if(_dinoList) {
+    if(_dinoList != dinoList) {
         _dinoList = [dinoList mutableCopy];
     }
 }

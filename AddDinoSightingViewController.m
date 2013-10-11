@@ -8,6 +8,8 @@
 
 #import "AddDinoSightingViewController.h"
 
+#import "DinoSighting.h"
+
 @interface AddDinoSightingViewController ()
 
 @end
@@ -113,7 +115,7 @@
 {
     // Navigation logic may go here. Create and push another view controller.
  
-    //* <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+    // <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
@@ -131,5 +133,13 @@
     return YES;
 }
 
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
+        if (self.NameInput.text.length > 0 || self.LocationInput.text.length > 0 || self.ScientificNameInput.text.length > 0) {
+            self.dinoSighting = [[DinoSighting alloc] initWithName:self.NameInput.text location:self.LocationInput.text scientificName:self.ScientificNameInput.text date:[NSDate date]];
+        }
+    }
+}
 
 @end

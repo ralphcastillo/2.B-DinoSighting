@@ -26,6 +26,8 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+    
+    self.dataController = [[DinoDataController alloc] init];
 }
 
 - (void)viewDidLoad
@@ -84,7 +86,7 @@
     DinoSighting * sighting = [self.dataController dinoSightingAtIndex:indexPath.row];
     
     cell.textLabel.text = [sighting dinoName];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ (%@)", sighting.scientificName, sighting.location];
+    cell.detailTextLabel.text = [sighting scientificName];
     return cell;
 }
 
@@ -133,14 +135,19 @@
 
 -(IBAction)done:(UIStoryboardSegue *)segue {
 
+    AddDinoSightingViewController *addController = [segue sourceViewController];
     if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
+        [self.dataController addDinoSightingWithSighting:addController.dinoSighting];
         
+        [[self tableView] reloadData];
     }
+    
+    [self dismissViewControllerAnimated:TRUE completion:NULL];
 }
 
 -(IBAction)cancel:(UIStoryboardSegue *)segue {
     if ([[segue identifier] isEqualToString:@"CancelInput"]) {
-        
+        [self dismissViewControllerAnimated:TRUE completion:NULL];
     }
 }
 
