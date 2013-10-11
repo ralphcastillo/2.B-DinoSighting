@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DinoDetailViewController : UIViewController
+@interface DinoDetailViewController : UITableViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) id sighting;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *scientificNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
 @end

@@ -28,4 +28,15 @@
     //if unsuccessful
     return nil;
 }
+
+-(NSString *)printDateWithMediumStyleFormat {
+    static NSDateFormatter *formatter = nil;
+    
+    if (formatter == nil) {
+        formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateStyle:NSDateFormatterMediumStyle];
+    }
+    
+    return [formatter stringFromDate:[self date]];
+}
 @end

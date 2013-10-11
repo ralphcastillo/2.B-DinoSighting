@@ -49,4 +49,12 @@
         _dinoList = [dinoList mutableCopy];
     }
 }
+
+-(id)init {
+    if (self = [super init]) {
+        [self initializeDefaultList];
+        return self;
+    }
+    return nil;
+}
 @end

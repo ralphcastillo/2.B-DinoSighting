@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class DinoDataController;
+
 @interface DinoMasterViewController : UITableViewController
+
+@property (nonatomic, strong) DinoDataController * dataController;
+
+/* UNWIND */
+-(IBAction) done:(UIStoryboardSegue *) segue ;
+
+-(IBAction)cancel:(UIStoryboardSegue *)segue ;
 
 @end

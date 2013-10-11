@@ -18,4 +18,6 @@
 -(id)initWithName:(NSString *)name location:(NSString *)location
      scientificName:(NSString *) scientificName date:(NSDate *) date;
 
+-(NSString *) printDateWithMediumStyleFormat;
+
 @end

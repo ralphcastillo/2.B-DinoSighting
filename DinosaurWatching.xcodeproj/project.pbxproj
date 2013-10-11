@@ -21,6 +21,7 @@
 		2E107B7E1807832600D1B359 /* DinoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E107B7D1807832600D1B359 /* DinoDetailViewController.m */; };
 		2E107B861807835700D1B359 /* DinoSighting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E107B851807835700D1B359 /* DinoSighting.m */; };
 		2E107B891807859700D1B359 /* DinoDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E107B881807859700D1B359 /* DinoDataController.m */; };
+		2E107B8C18080FAB00D1B359 /* AddDinoSightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E107B8B18080FAB00D1B359 /* AddDinoSightingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		2E107B851807835700D1B359 /* DinoSighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinoSighting.m; sourceTree = "<group>"; };
 		2E107B871807859700D1B359 /* DinoDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinoDataController.h; sourceTree = "<group>"; };
 		2E107B881807859700D1B359 /* DinoDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinoDataController.m; sourceTree = "<group>"; };
+		2E107B8A18080FAB00D1B359 /* AddDinoSightingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddDinoSightingViewController.h; path = ../AddDinoSightingViewController.h; sourceTree = "<group>"; };
+		2E107B8B18080FAB00D1B359 /* AddDinoSightingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddDinoSightingViewController.m; path = ../AddDinoSightingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 		2E107B641807832600D1B359 /* DinosaurWatching */ = {
 			isa = PBXGroup;
 			children = (
+				2E107B8A18080FAB00D1B359 /* AddDinoSightingViewController.h */,
+				2E107B8B18080FAB00D1B359 /* AddDinoSightingViewController.m */,
 				2E107B841807835700D1B359 /* DinoSighting.h */,
 				2E107B851807835700D1B359 /* DinoSighting.m */,
 				2E107B871807859700D1B359 /* DinoDataController.h */,
@@ -195,6 +200,7 @@
 				2E107B7E1807832600D1B359 /* DinoDetailViewController.m in Sources */,
 				2E107B861807835700D1B359 /* DinoSighting.m in Sources */,
 				2E107B891807859700D1B359 /* DinoDataController.m in Sources */,
+				2E107B8C18080FAB00D1B359 /* AddDinoSightingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

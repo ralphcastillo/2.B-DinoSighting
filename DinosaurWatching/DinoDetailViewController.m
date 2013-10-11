@@ -8,6 +8,7 @@
 
 #import "DinoDetailViewController.h"
 
+#import "DinoSighting.h"
 @interface DinoDetailViewController ()
 - (void)configureView;
 @end
@@ -16,10 +17,10 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setDinoSightingDetailItem:(id)sighting
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
+    if (_sighting != sighting) {
+        _sighting = sighting;
         
         // Update the view.
         [self configureView];
@@ -30,8 +31,11 @@
 {
     // Update the user interface for the detail item.
 
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+    if (self.sighting) {
+        self.nameLabel.text = [self.sighting dinoName];
+        self.scientificNameLabel.text = [self.sighting scientificName];
+        self.locationLabel.text = [self.sighting location];
+        self.dateLabel.text = [self.sighting printDateWithMediumStyleFormat];
     }
 }
 
