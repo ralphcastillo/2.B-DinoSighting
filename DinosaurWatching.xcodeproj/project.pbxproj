@@ -19,6 +19,8 @@
 		2E107B781807832600D1B359 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E107B761807832600D1B359 /* MainStoryboard.storyboard */; };
 		2E107B7B1807832600D1B359 /* DinoMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E107B7A1807832600D1B359 /* DinoMasterViewController.m */; };
 		2E107B7E1807832600D1B359 /* DinoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E107B7D1807832600D1B359 /* DinoDetailViewController.m */; };
+		2E107B861807835700D1B359 /* DinoSighting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E107B851807835700D1B359 /* DinoSighting.m */; };
+		2E107B891807859700D1B359 /* DinoDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E107B881807859700D1B359 /* DinoDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		2E107B7A1807832600D1B359 /* DinoMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DinoMasterViewController.m; sourceTree = "<group>"; };
 		2E107B7C1807832600D1B359 /* DinoDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DinoDetailViewController.h; sourceTree = "<group>"; };
 		2E107B7D1807832600D1B359 /* DinoDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DinoDetailViewController.m; sourceTree = "<group>"; };
+		2E107B841807835700D1B359 /* DinoSighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinoSighting.h; sourceTree = "<group>"; };
+		2E107B851807835700D1B359 /* DinoSighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinoSighting.m; sourceTree = "<group>"; };
+		2E107B871807859700D1B359 /* DinoDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinoDataController.h; sourceTree = "<group>"; };
+		2E107B881807859700D1B359 /* DinoDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinoDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 		2E107B641807832600D1B359 /* DinosaurWatching */ = {
 			isa = PBXGroup;
 			children = (
+				2E107B841807835700D1B359 /* DinoSighting.h */,
+				2E107B851807835700D1B359 /* DinoSighting.m */,
+				2E107B871807859700D1B359 /* DinoDataController.h */,
+				2E107B881807859700D1B359 /* DinoDataController.m */,
 				2E107B6D1807832600D1B359 /* DinoAppDelegate.h */,
 				2E107B6E1807832600D1B359 /* DinoAppDelegate.m */,
 				2E107B761807832600D1B359 /* MainStoryboard.storyboard */,
@@ -183,6 +193,8 @@
 				2E107B6F1807832600D1B359 /* DinoAppDelegate.m in Sources */,
 				2E107B7B1807832600D1B359 /* DinoMasterViewController.m in Sources */,
 				2E107B7E1807832600D1B359 /* DinoDetailViewController.m in Sources */,
+				2E107B861807835700D1B359 /* DinoSighting.m in Sources */,
+				2E107B891807859700D1B359 /* DinoDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
